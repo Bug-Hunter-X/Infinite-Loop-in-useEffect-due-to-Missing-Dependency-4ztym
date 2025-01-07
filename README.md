@@ -1,0 +1,3 @@
+# React useEffect Infinite Loop Bug
+
+This repository demonstrates a common React bug: an infinite loop caused by an incorrectly specified dependency array in the `useEffect` hook.  The `MyComponent` initially renders, logs the count, and increments it.  However, the effect function depends on `count` but does not include it in the dependency array. Therefore, the `useEffect` continues to run after each render leading to a infinite loop and rendering performance issues.
